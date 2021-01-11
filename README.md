@@ -1,6 +1,6 @@
 # Copy-CameraPhotos
 
-A utility to transfer photos from removable media to a destination of choice.
+A utility to transfer photos from removable media with useful workflow options.
 
 This Powershell script makes it easy to transfer photos from your digital camera to a folder of your choice.
 
