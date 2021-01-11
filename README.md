@@ -18,6 +18,21 @@ By default, it searches all removable media for a DCIM folder and copies all new
 
 * Eject the removable media automatically after the copy
 
+# Installation / use
+
+*Basic use/testing*
+Download Copy-CameraPhotos.ps1 to a location of your choice.
+Open Powershell
+Navigate to download location
+Run the script with .\Copy-CameraPhotos.ps1
+
+*Installation*
+Download Copy-CameraPhotos.ps1 and copy it to a folder in the user's path, eg C:\Users\<username>\Documents\WindowsPowerShell
+Then run the script from a powershell session with Copy-CameraPhotos.ps1
+
+*Running automatially on device insertion*
+I've not tried this, but customising the script to the user's requirements, then converting to an exe with a suitable utility *should* work
+
 # Examples
 
 *Copy all new photos from all inserted removable media to the user's Pictures folder, separating photos by date in the format "YYYY_MM_DD", create a sub folder called "Export" within each folder, and eject (safe-remove) the media after completion:*
@@ -33,5 +48,5 @@ By default, it searches all removable media for a DCIM folder and copies all new
 
 .\Copy-CameraPhotos.ps1 -DestinationPath D:\Photos -DestinationFormat '{0:yyyy}-{0:MM}' -NoEject
 
-*Note: the DestinationFormat parameter uses the standard Powershell formatting operator -f - see https://ss64.com/ps/syntax-f-operator.html*
+*Note: the DestinationFormat parameter uses the standard Powershell formatting operator -f - see [here](https://ss64.com/ps/syntax-f-operator.html)*
 
